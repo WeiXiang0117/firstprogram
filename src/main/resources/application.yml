@@ -1,0 +1,23 @@
+
+
+
+name: Paul
+
+create:
+       sql: create table test2_ (user_id_ varchar(20), user_no_ integer,  disable boolean);
+
+insert:
+       sql: insert into test_ (id, name, birthday) values (14145456, '許特'`, ' 1996-6-6'),
+        (354345, 'APEX', ' 1987-8-7'), (45456456, 'ROCKER', ' 1995-1-17'), (7897878, 'OMG', ' 1999-9-1')
+
+update:
+       sql: update test_ set name = '洪偉翔' where id = 45456456
+
+delete:
+       sql: delete from test_ where name = '阿祥'
+
+paul:
+  dao:
+    url: jdbc:postgresql://192.168.32.130:5432/killme
+    user: tist
+    password: tist24231451
